@@ -5,6 +5,11 @@ from .forms import RegisterForm
 def register(request):
     form = RegisterForm()
 
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+
     context = {'form': form}
     return render(request, 'authors/pages/register_page.html', context)
 

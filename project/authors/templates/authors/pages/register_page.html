@@ -4,11 +4,13 @@
 	<div class="register-form-container">
 		<div class="register-form-aux-container">
 			<div class="register-form-title">
-				<p class="register-form-title-text">Faça seu Cadastro</p>
+				<h2 class="register-form-title-text">Faça seu Cadastro</h2>
 			</div>
 			<form action="" method="POST">
+				{% csrf_token %}
 				<div class="register-form-box">
 					<div class="form-text-inputs">
+						<div
 						<div class="register-form-firstname register-form-field">
 							<label class="firstname-label">Seu primeiro nome</label>
 							{{form.first_name}}
@@ -31,7 +33,7 @@
 						</div>
 					</div>
 					<div class="register-form-button-container">
-						<input class="form-container" type="submit" value="Registrar">
+						<input class="form-input-container" type="submit" value="Registrar">
 					</div>
 				</div>
 			</form>
