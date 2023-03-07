@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.home-header-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-inline: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #03181c;
+	padding-block: 15px;
+}
+
+.body-post-container{
+	display: flex;
+	flex-direction: column;
+	margin-inline: 20%;
+	margin-block: 10px;
+	border: 1px solid #dcdfe0;
+	border-radius: 4px;
+	padding: 10px 20px;
+	gap: 5px;
+}
+
+.body-post-subtitle{
+	margin-bottom: 5px;
+}
+.date{
+	color: #A8A8A8;
+}
+body{
+	max-width: 100%;
+	margin-top: 67px;
+	justify-content: center;
+}
+
+.body-title-container{
+	padding-inline: 20%;
+	padding-block: 20px 10px;
+	display: flex;
+	flex-direction: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.home-header-title, .home-header-login-button{
+	color: white;
+}	
+
+.header-login-button{
+	color: white;
+}
+
+.post-title{
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;
+	color: black;
+	transition: ease-in-out;
+}
+
+.button{
+	text-decoration: none;
+}
+
+.post-title:hover{
+	color: blue;
+}
+
+.body-post-tags{
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	right: 100%;
+}
+
+.body-post-lower{
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+}
+
+.body-post-top{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
+}
+.date{
+	float: left;
+}
+.tag{
+	border: 1px solid green;
+	padding: 3px 5px;
+	font-size: 13px;
+	background-color: greenyellow;
+	border-radius: 2px;
+	float: right;
+}
+
+.form-container{
+	width: 500px;
+	height: 30px;
+}
+
+.register-form-container{
+	padding-inline:20%;
+	padding-top: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.register-form-field{
+	margin-block: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.register-form-aux-container{
+	border: 1px solid black;
+}
+.form-text-inputs{
+	margin-block:5px;
+}
+.register-submit-button{
+	width: 500px;
+}
+
+.register-form-container-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.register-form-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

@@ -1,0 +1,40 @@
+{% include 'global/base.html' %}
+
+<div class="register-form-container-container">
+	<div class="register-form-container">
+		<div class="register-form-aux-container">
+			<div class="register-form-title">
+				<p class="register-form-title-text">Faça seu Cadastro</p>
+			</div>
+			<form action="" method="POST">
+				<div class="register-form-box">
+					<div class="form-text-inputs">
+						<div class="register-form-firstname register-form-field">
+							<label class="firstname-label">Seu primeiro nome</label>
+							{{form.first_name}}
+						</div>
+						<div class="register-form-lastname register-form-field">
+							<label class="lastname-label">Seu último nome</label>
+							{{form.last_name}}
+						</div>
+						<div class="register-form-username register-form-field">
+							<label class="username-label">Seu nome de usuário</label>
+							{{form.username}}
+						</div>
+						<div class="register-form-email register-form-field">
+							<label class="email-label">Seu email</label>
+							{{form.email}}
+						</div>
+						<div class="register-form-password register-form-field">
+							<label class="email-label">Sua senha</label>
+							{{form.password}}
+						</div>
+					</div>
+					<div class="register-form-button-container">
+						<input class="form-container" type="submit" value="Registrar">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
