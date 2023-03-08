@@ -13,3 +13,5 @@ def register(request):
     context = {'form': form}
     return render(request, 'authors/pages/register_page.html', context)
 
+def login(request):
+    return render(request, 'authors/pages/login_page.html')

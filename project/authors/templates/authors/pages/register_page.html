@@ -10,7 +10,6 @@
 				{% csrf_token %}
 				<div class="register-form-box">
 					<div class="form-text-inputs">
-						<div
 						<div class="register-form-firstname register-form-field">
 							<label class="firstname-label">Seu primeiro nome</label>
 							{{form.first_name}}
@@ -34,6 +33,9 @@
 					</div>
 					<div class="register-form-button-container">
 						<input class="form-input-container" type="submit" value="Registrar">
+					</div>
+					<div class="register-form-redirect">
+						<p>Já tem uma conta? </p><a class="login-link-button" href="">Faça login aqui.</a>
 					</div>
 				</div>
 			</form>
