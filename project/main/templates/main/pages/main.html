@@ -1,34 +1,11 @@
 {% include 'global/base.html' %}
 
 <body>
+	{% include 'main/partials/body_header.html'%}
 
-	<div class="body-title-container">
-		<h2 class="body-title">Top questions</h2>
-		<a class="body-question-button button" href="">Post</a>
-	</div>
-	<div class="body-post-container">
-		<div class="body-post-top">
-			<div class="body-post-title"> 
-				<a class="post-title" href=""> Título </a>
-			</div>
-			<p>•</p>
-			<div class="body-post-author-name">
-				<a class="post-author"> Fulano </a>
-			</div>
-			<p>•</p>
-			<div class="post-date">
-				<p class="date">25 de Fevereiro às 14h50</p>
-			</div>
-		</div>
-		<div class="body-post-subtitle">
-			<p class="post-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla at ex at ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-		</div>
-		<div class="body-post-lower">
-			<div class="body-post-tags">
-				<p class="tag">Matemática</p>
-				<p class="tag">Cálculo</p>
-			</div>
-		</div>
-	</div>
+	
+	{% for question in questions %}
+		{% include 'main/partials/home_question.html' %}
+	{% endfor %}
 </body>
 </html>

@@ -1,0 +1,33 @@
+{% include 'global/base.html'%}
+
+<div class="question-form-container">
+	<div class="question-form-box">
+		<form action="" method="POST">
+			{% csrf_token %}
+			<div class="question-title-form question-form">
+				<label for="title" class="question-label">
+					Insira um título.
+				</label>
+				<p class="instruction">Seja específico.</p>
+				{{form.title}}
+			</div>
+			<div class="question-description-form question-form">
+				<label for="description" class="question-label">
+					Descreva seu problema com detalhes.
+				</label>
+				<p class="instruction">Mínimo de 20 caracteres</p>
+				{{form.description}}
+			</div>
+			<div class="question-category-form question-form">
+				<label for="category" class="question-label">
+					Sobre qual matéria é o seu post?
+				</label>
+				{{form.category}}
+			</div>
+			<div class="question-post-button-container">
+				<input class="question-post-button" type="submit" value="Publicar Post">
+			</div>
+		</form>
+	</div>
+</div>
+
