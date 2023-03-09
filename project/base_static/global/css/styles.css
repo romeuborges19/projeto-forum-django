@@ -242,3 +242,42 @@ body{
 .button:hover{
 	text-decoration: underline;
 }
+
+.question-form-field{
+	width: 700px;
+	height: 40px;
+	padding-inline: 5px;
+	border: 1px solid #dcdfe0; 
+	border-radius: 2px;
+}
+
+.question-form-textarea{
+	width: 700px;
+	border: 1px solid #dcdfe0;
+	padding-inline: 5px;
+	border-radius: 2px;
+	resize: none;
+}
+
+.question-choicefield{
+	width: 700px;
+	padding-inline: 5px;
+	height: 40px;
+}
+
+.question-post-button{
+	width: 100px;
+	height: 40px;
+	background-color: #03181c;
+	color: white;
+	font-weight: bold;
+	transition: ease-in-out;
+}
+
+.question-post-button:hover{
+	text-decoration: underline;
+}
+
+.question-post-button-container{
+	margin-top: 20px;
+}

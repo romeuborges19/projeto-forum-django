@@ -7,7 +7,7 @@ from .models import Question
 app_name = 'main'
 
 def home(request):
-    questions = Question.objects.all()
+    questions = Question.objects.all().order_by('-id')
 
     return render(request, 'main/pages/main.html', context={
         'questions':questions
