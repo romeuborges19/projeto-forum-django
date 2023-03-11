@@ -1,4 +1,4 @@
-																			  *{
+*{
 	margin: 0;
 	padding: 0;
 }
@@ -129,6 +129,7 @@ body{
 .form-container{
 	width: 500px;
 	height: 30px;
+	padding-inline: 5px;
 	border: 1px solid #dcdfe0;
     border-radius: 2px;
 }
@@ -156,7 +157,7 @@ body{
 }
 
 .register-form-field{
-	margin-block: 10px;
+	margin-bottom: 10px;
 	display: flex;
 	flex-direction: column;
 }
@@ -315,4 +316,17 @@ body{
 .post-content-title{
 	font-size: 24px;
 	font-weight: bolder;
+}
+
+.register-form-errors{
+	margin-bottom:21px;
+}
+
+.errors-list{
+	color: #E31837;
+}
+
+.errorlist{
+	list-style-type: none;
+	color: #E31837;
 }

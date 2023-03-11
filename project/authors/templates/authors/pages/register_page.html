@@ -9,33 +9,31 @@
 			<form action="" method="POST">
 				{% csrf_token %}
 				<div class="register-form-box">
-					<div class="form-text-inputs">
-						<div class="register-form-firstname register-form-field">
-							<label class="firstname-label">Seu primeiro nome</label>
-							{{form.first_name}}
-						</div>
-						<div class="register-form-lastname register-form-field">
-							<label class="lastname-label">Seu último nome</label>
-							{{form.last_name}}
-						</div>
-						<div class="register-form-username register-form-field">
-							<label class="username-label">Seu nome de usuário</label>
-							{{form.username}}
-						</div>
-						<div class="register-form-email register-form-field">
-							<label class="email-label">Seu email</label>
-							{{form.email}}
-						</div>
-						<div class="register-form-password register-form-field">
-							<label class="email-label">Sua senha</label>
-							{{form.password}}
-						</div>
+					<div class="form-text-inputs">	
+						{% for field in form %}
+							<div class="form-field-container">
+								{{ field.label }}
+								<div class="register-form-field">
+									{{ field }}
+									{{ field.errors }}
+								</div>
+							</div>	
+						{% endfor %}
+					</div>
+					<div class="register-form-errors">
+						<p class="errors-list">
+							{% if form.non_field_errors %}
+								{% for error in form.non_field_errors %}
+									{{error}}
+								{% endfor %}
+							{% endif %}
+						</p>
 					</div>
 					<div class="register-form-button-container">
 						<input class="form-input-container" type="submit" value="Registrar">
 					</div>
 					<div class="register-form-redirect">
-						<p>Já tem uma conta? </p><a class="login-link-button" href="">Faça login aqui.</a>
+						<p>Já tem uma conta? </p><a class="login-link-button" href="{% url 'authors:login'%}">Faça login aqui.</a>
 					</div>
 				</div>
 			</form>
