@@ -1,0 +1,21 @@
+{% include 'global/base.html' %}
+
+<div class="post-container">
+	<div class="post-info-container">
+		<p class="post-info-author">Postado por @{{question.author.username}}</p>
+		<p>•</p>
+		<p>{{ question.posted_at }}</p>
+	</div>
+	<div class="post-content-container">
+		<div class="post-content-title">
+			{{question.title}}
+		</div>
+		<div class="post-content-description">
+			{{question.description}}
+		</div>
+	</div>
+	<div class="post-bottom-info">
+		<p class="tag">{{ question.category }}</p>
+		<p class="post-bottom-likes">2 curtidas</p>
+	</div>
+</div>

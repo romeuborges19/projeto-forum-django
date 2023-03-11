@@ -22,3 +22,7 @@ def ask(request):
             form.save()
 
     return render(request, 'main/pages/asking_page.html', context={'form': form})
+
+def question(request, id):
+    question = Question.objects.filter(id=id).order_by('-id').first
+    return render(request, 'main/pages/question_page.html', context={'question':question})

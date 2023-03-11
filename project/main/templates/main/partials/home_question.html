@@ -1,24 +1,24 @@
 <div class="body-post-container">
 		<div class="body-post-top">
 			<div class="body-post-title"> 
-				<a class="post-title" href=""> {{question.title}} </a>
+				<a class="post-title" href="{% url 'main:question' question.id %}"> {{question.title}} </a>
 			</div>
-			<p>•</p>
-			<div class="body-post-author-name">
-				<a class="post-author"> {{question.author.username}} </a>
-			</div>
-			<p>•</p>
-			<div class="post-date">
-				<p class="date">{{question.posted_at}}</p>
-			</div>
+			
 		</div>
 		<div class="body-post-subtitle">
 			<p class="post-subtitle">{{question.description}}</p>
 		</div>
 		<div class="body-post-lower">
+			<div class="body-post-author-name">
+				<a class="post-author"> {{question.author.username}} </a>
+			</div>
+			<div class="post-date">
+				<p class="date">{{question.posted_at}}</p>
+			</div>
 			<div class="body-post-tags">
-					<p class="tag">{{question.category.name}}</p>
+				<p class="tag">{{question.category.name}}</p>
 			</div>
 		</div>
+	</a>
 	</div>
 
